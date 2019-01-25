@@ -53,7 +53,7 @@ const checkboxes = [
     return (
       <div>
           <form onSubmit={this.handleFormSubmit}>
-          <h3>This is an example fo a checkbox question. Answer the question. You may select multiple</h3>
+          <h3>This is an example fo a checkbox question. Answer the question. You may select multiple checks</h3>
           <p> Select all options that Apply </p>
              
         {
