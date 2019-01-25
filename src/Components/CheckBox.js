@@ -53,14 +53,17 @@ const checkboxes = [
     return (
       <div>
           <form onSubmit={this.handleFormSubmit}>
-          <h3>Select all of Shante's best qualities.</h3>
+          <h3>This is an example fo a checkbox question. Answer the question. You may select multiple</h3>
           <p> Select all options that Apply </p>
              
         {
           checkboxes.map(item => (
             <label key={item.key}>
               {item.name}
-              <input type="checkbox" name={item.name} checked={this.state.checkedItems.get(item.name)} onChange={this.handleChange || false}  />
+              <input type="checkbox" 
+                name={item.name} 
+                checked={this.state.checkedItems.get(item.name)} 
+                onChange={this.handleChange || false}  />
             </label>
           ))
         }

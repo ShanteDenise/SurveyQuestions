@@ -20,7 +20,9 @@ import React from 'react'
       <div>
           <h3>Additional Comments</h3>
           <form onSubmit={this.handleFormSubmit}>
-              <textarea onChange={this.handleChange}rows="6" col="100" type="textarea" name="essay-question" value={this.state.essayQuestion}></textarea>
+              <textarea 
+                    onChange={this.handleChange} rows="6" col="100" type="textarea" name="essay-question" 
+                    value={this.state.essayQuestion}></textarea>
               <button className="btn-default" type="submit">Submit</button>       
           </form>      
       </div>
